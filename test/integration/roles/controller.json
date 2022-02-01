@@ -1,0 +1,9 @@
+{
+    "name": "ultron",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "description": "Build a single node running Clickhouse",
+    "run_list": [
+        "recipe[ultron::default]"
+    ]
+}

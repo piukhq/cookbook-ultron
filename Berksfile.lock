@@ -1,0 +1,7 @@
+DEPENDENCIES
+  ultron
+    path: .
+    metadata: true
+
+GRAPH
+  ultron (0.1.0)

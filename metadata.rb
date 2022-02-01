@@ -1,0 +1,5 @@
+name 'ultron'
+license 'All Rights Reserved'
+description 'Installs/Configures Ultron'
+version '0.1.0'
+chef_version '>= 16.0'
