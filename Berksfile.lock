@@ -4,4 +4,4 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
-  ultron (0.1.0)
+  ultron (1.0.0)
