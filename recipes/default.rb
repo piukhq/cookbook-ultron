@@ -12,7 +12,7 @@ service 'clickhouse-server' do
   action :nothing
 end
 
-%w(cert.pem key.pem).each do |c|
+%w(ca.pem cert.pem key.pem).each do |c|
   template "/etc/clickhouse-server/#{c}" do
     source "certificates/#{c}"
     owner 'clickhouse'

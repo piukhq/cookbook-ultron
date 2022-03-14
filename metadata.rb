@@ -1,4 +1,4 @@
 name 'ultron'
 description 'Installs/Configures ClickHouse'
-version '1.1.2'
+version '1.1.3'
 chef_version '>= 16.0'
