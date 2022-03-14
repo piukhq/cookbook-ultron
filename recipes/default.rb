@@ -12,11 +12,28 @@ service 'clickhouse-server' do
   action :nothing
 end
 
+%w(cert.pem key.pem).each do |c|
+  template "/etc/clickhouse-server/#{c}" do
+    source "certificates/#{c}"
+    owner 'root'
+    group 'root'
+    mode '0600'
+    action :create
+    notifies :restart, 'service[clickhouse-server]'
+  end
+end
+
+execute 'generate_diffie_hellman' do
+  command 'openssl dhparam -out /etc/clickhouse-server/dhparam.pem 4096'
+  not_if { ::File.exist?('/etc/clickhouse-server/dhparam.pem') }
+  notifies :restart, 'service[clickhouse-server]'
+end
+
 template '/etc/clickhouse-server/config.xml' do
-  source 'config.xml.erb'
+  source 'config/config.xml'
   owner 'root'
   group 'root'
   mode '0644'
   action :create
-  notifies :restart, 'service[clickhouse-server]', :immediately
+  notifies :restart, 'service[clickhouse-server]'
 end
