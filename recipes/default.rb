@@ -15,8 +15,8 @@ end
 %w(cert.pem key.pem).each do |c|
   template "/etc/clickhouse-server/#{c}" do
     source "certificates/#{c}"
-    owner 'root'
-    group 'root'
+    owner 'clickhouse'
+    group 'clickhouse'
     mode '0600'
     action :create
     notifies :restart, 'service[clickhouse-server]'
