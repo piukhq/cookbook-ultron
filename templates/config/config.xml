@@ -17,7 +17,6 @@
         <server>
             <certificateFile>/etc/clickhouse-server/cert.pem</certificateFile>
             <privateKeyFile>/etc/clickhouse-server/key.pem</privateKeyFile>
-            <caConfig>/etc/clickhouse-server/ca.pem</caConfig>
             <dhParamsFile>/etc/clickhouse-server/dhparam.pem</dhParamsFile>
             <verificationMode>none</verificationMode>
             <loadDefaultCAFile>true</loadDefaultCAFile>
