@@ -1,3 +1,0 @@
-I, [2022-01-31T22:38:40.751364 #89677]  INFO -- Kitchen: -----> Starting Test Kitchen (v3.2.2)
-I, [2022-01-31T22:38:41.420746 #89677]  INFO -- Kitchen: -----> Destroying <ultron-bento-ubuntu-2004>...
-I, [2022-01-31T22:38:42.578181 #89677]  INFO -- Kitchen: -----> Test Kitchen is finished. (0m1.83s)

@@ -1,5 +1,0 @@
-I, [2022-01-31T22:38:41.420810 #89677]  INFO -- ultron-bento-ubuntu-2004: -----> Destroying <ultron-bento-ubuntu-2004>...
-I, [2022-01-31T22:38:42.061386 #89677]  INFO -- ultron-bento-ubuntu-2004: Azure environment: Azure
-I, [2022-01-31T22:38:42.061477 #89677]  INFO -- ultron-bento-ubuntu-2004: Destroying Resource Group: kitchen-ultron-bento-ubuntu-2004-20220131T223526
-I, [2022-01-31T22:38:42.570739 #89677]  INFO -- ultron-bento-ubuntu-2004: Destroy operation accepted and will continue in the background.
-I, [2022-01-31T22:38:42.577064 #89677]  INFO -- ultron-bento-ubuntu-2004: Finished destroying <ultron-bento-ubuntu-2004> (0m1.15s).
